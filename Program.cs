@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Method_Assignment
+namespace Method__Class_Assignment_2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book("Harry Potter","JK Rowling",400);
-            Book book2 = new Book("Lord of the Rings", "Tolken",700);
-            book2.pages = 850;
-            
-            Console.WriteLine(book2.pages);
-
+            //Instantiate the MathMethod2 class
+            MathMethod2 math1 = new MathMethod2();
+            // call the first method with  an int parameter
+            Console.WriteLine(math1.MathOp(10));
+            // call the second method with a decimal parameter
+            Console.WriteLine(math1.MathOp(10.3m));
+            // call the third method with a string parameter
+            Console.WriteLine(math1.MathOp("10"));
             Console.ReadLine();
         }
     }
